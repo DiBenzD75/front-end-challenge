@@ -1,0 +1,51 @@
+.layer {
+  width: 98vw;
+  height: 95vh;
+  position: relative;
+}
+.form {
+  max-width: 400px;
+  margin: 0 auto;
+  display: block;
+  padding: 20px;
+  border: 1px solid lightblue;
+  border-radius: 8px;
+  margin-top: 20px;
+  position: relative;
+  top: 20%;
+}
+
+.form label {
+  text-align: left;
+  padding: 12px;
+  width: 100px;
+  font-weight: bold;
+  padding-bottom: 0px;
+  display: inline-block;
+}
+
+.form label::first-letter {
+  text-transform: uppercase;
+}
+.form input,
+.form button {
+  border-radius: 8px;
+  padding: 12px;
+  width: 88%;
+  margin: 10px;
+}
+
+.form button {
+  width: 95%;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.form .error {
+  border: 1px solid red;
+}
+.form .errorMessage {
+  color: red;
+  display: inline-block;
+  margin-left: 10px;
+}

@@ -1,5 +1,7 @@
 .App {
   text-align: left;
+  position: relative;
+  height: 98vh;
 }
 td,
 tr,
@@ -16,3 +18,11 @@ th {
 th:hover {
   text-decoration: underline;
 }
+
+.App .errorMessage {
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  color: red;
+}
+

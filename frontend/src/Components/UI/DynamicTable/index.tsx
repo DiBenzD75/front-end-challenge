@@ -12,8 +12,15 @@ interface DynamicTableProps<T> {
   data: T[]
 }
 
-/** DynamicTable component */
-function DynamicTable<T>(props: DynamicTableProps<T>) {
+/**
+ * The DynamicTable component is a generic table component that sorts and displays data.
+ * @template T The generic type parameter that describes the shape of the data objects.
+ * This allows the component to be reusable and adaptable to different data structures.
+ * @param {DynamicTableProps<T>} props The props that the component expects.
+ * - `data`: An array of objects that will be displayed in the table.
+ * @returns {JSX.Element} A Table component populated with sorted data.
+ */
+const DynamicTable = <T,>(props: DynamicTableProps<T>): JSX.Element => {
 
   /** State to hold sorted data */
   const [sortedData, setSortedData] = useState<T[]>([])
@@ -39,10 +46,9 @@ function DynamicTable<T>(props: DynamicTableProps<T>) {
     setSortedData(sortedData)
   }, [props.data, sortConfig])
 
-
-  /** 
-   * Function to handle sorting 
-   * when a column header is clicked 
+  /**
+   * Function to handle sorting
+   * when a column header is clicked
    */
   const handleSort = (key: keyof T) => {
     let direction: 'asc' | 'desc' = 'asc'
