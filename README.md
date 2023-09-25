@@ -1,27 +1,29 @@
 # front-end-challenge
-Front End Challenge
 
 ## Installation Steps
 
-Clone the repository
-git clone https://github.com/DiBenzD75/front-end-challenge.git
+Clone the repository:
+- git clone https://github.com/DiBenzD75/front-end-challenge.git
 
-Navigate to the project directory
-cd front-end-challenge
+Navigate to the project directory:
+- cd front-end-challenge/frontend
 
-Install dependencies
-npm install
+Install dependencies:
+- npm install
 
-Start the development server
-npm start
+Start the development server:
+- npm start
 ## Demo data for Login Form
 - Username: max@musterman.de
 - Password: P@ssw0rD
+
 or
+
 - Username: john@doe.com
 - Password: P@ssw0rD
 
 ## Description of the completed task
+
 - Use the data in the provided data.json file to visualise a sortable table/list of entries
 
 - Create a simple form with the folowing requirements
@@ -48,7 +50,8 @@ or
 
   - You can use external resources/libraries as you might need/want them
 
-- Don't concentrate on fully completing the task. Rather focus on clean and reasonable application and code structure keeping in mind that a project might need to scale regarding team and application size
+- Don't concentrate on fully completing the task. Rather focus on clean and reasonable application and code structure keeping in mind that a project might need to scale regarding team and application size.
+
 - Don't invest more than 6-8 hours on the implementation
 - The project should be set up and versioned using a git repository, preferably using Github or similar to give us access to the repository when you are done.
 
