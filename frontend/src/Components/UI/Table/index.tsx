@@ -8,11 +8,14 @@ interface TableProps<T> {
 /**
  * This Table component dynamically generates table headers and rows 
  * based on the keys of the data objects.
+ * 
  * @template T The generic type parameter that describes the shape of the data objects.
  * This allows the component to be reusable and adaptable to different data structures.
+ * 
  * @param {TableProps<T>} props The props that the component expects.
  * - `data`: An array of objects that will be displayed in the table.
  * - `handleSort`: A function to handle sorting when a column header is clicked.
+ * 
  * @returns {JSX.Element} A table element populated with data, 
  * or a loading message if data is not yet available.
  */

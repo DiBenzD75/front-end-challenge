@@ -14,10 +14,13 @@ interface DynamicTableProps<T> {
 
 /**
  * The DynamicTable component is a generic table component that sorts and displays data.
+ * 
  * @template T The generic type parameter that describes the shape of the data objects.
  * This allows the component to be reusable and adaptable to different data structures.
+ * 
  * @param {DynamicTableProps<T>} props The props that the component expects.
  * - `data`: An array of objects that will be displayed in the table.
+ * 
  * @returns {JSX.Element} A Table component populated with sorted data.
  */
 const DynamicTable = <T,>(props: DynamicTableProps<T>): JSX.Element => {

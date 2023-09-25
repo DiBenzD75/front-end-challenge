@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { formConfig, FormData } from '../../../Types/config'
-import './Form.css'
+import './form.css'
 
 interface FormProps {
   onSubmit: (formData: FormData) => void
@@ -12,7 +12,7 @@ interface FormProps {
  * based on the rules specified in the configuration.
  *
  * Props:
- * - `onSubmit`: A callback function that is invoked when the form is submitted.
+ * - @param `onSubmit`: A callback function that is invoked when the form is submitted.
  * The function receives the form data as its argument.
  */
 const Form: React.FC<FormProps> = ({ onSubmit }) => {
